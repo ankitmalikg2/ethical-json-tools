@@ -1,0 +1,78 @@
+{
+  "name": "ethical-valid-json",
+  "displayName": "Ethical Valid JSON",
+  "description": "this tool has various ethical tools related to Json",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.91.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:ethical-valid-json.validateJson",
+    "onCommand:ethical-valid-json.prettyFormatJson",
+    "onCommand:ethical-valid-json.minifyJson",
+    "onCommand:ethical-valid-json.stringifyJson",
+    "onCommand:ethical-valid-json.parseStringifiedJson"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "ethical-valid-json.validateJson",
+        "title": "Validate JSON"
+      },
+      {
+        "command": "ethical-valid-json.prettyFormatJson",
+        "title": "Prettify"
+      },
+      {
+        "command": "ethical-valid-json.minifyJson",
+        "title": "Minify"
+      },
+      {
+        "command": "ethical-valid-json.stringifyJson",
+        "title": "Stringify"
+      },
+      {
+        "command": "ethical-valid-json.parseStringifiedJson",
+        "title": "Unstringify"
+      }
+    ],
+    "views": {
+      "explorer": [
+        {
+          "id": "jsonTools",
+          "name": "JSON Tools",
+          "icon": "json"
+        }
+      ]
+    },
+    "viewsWelcome": [
+      {
+        "view": "jsonTools",
+        "contents": "[Validate JSON](command:ethical-valid-json.validateJson)\n[Pretty Format JSON](command:ethical-valid-json.prettyFormatJson)\n[Minify JSON](command:ethical-valid-json.minifyJson)\n[Stringify JSON](command:ethical-valid-json.stringifyJson)\n[Parse Stringified JSON](command:ethical-valid-json.parseStringifiedJson)"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.91.0",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "22.x",
+    "@typescript-eslint/eslint-plugin": "^8.39.0",
+    "@typescript-eslint/parser": "^8.39.0",
+    "eslint": "^9.32.0",
+    "typescript": "^5.9.2",
+    "@vscode/test-cli": "^0.0.11",
+    "@vscode/test-electron": "^2.5.2"
+  }
+}
