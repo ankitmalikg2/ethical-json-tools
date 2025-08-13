@@ -1,6 +1,6 @@
 {
-  "name": "ethical-valid-json",
-  "displayName": "Ethical Valid JSON",
+  "name": "ethical-json-tools",
+  "displayName": "Ethical Json Tools",
   "description": "this tool has various ethical tools related to Json",
   "version": "0.0.1",
   "engines": {
@@ -10,33 +10,33 @@
     "Other"
   ],
   "activationEvents": [
-    "onCommand:ethical-valid-json.validateJson",
-    "onCommand:ethical-valid-json.prettyFormatJson",
-    "onCommand:ethical-valid-json.minifyJson",
-    "onCommand:ethical-valid-json.stringifyJson",
-    "onCommand:ethical-valid-json.parseStringifiedJson"
+    "onCommand:ethical-json-tools.validate",
+    "onCommand:ethical-json-tools.prettify",
+    "onCommand:ethical-json-tools.minify",
+    "onCommand:ethical-json-tools.stringify",
+    "onCommand:ethical-json-tools.unstringify"
   ],
   "main": "./out/extension.js",
   "contributes": {
     "commands": [
       {
-        "command": "ethical-valid-json.validateJson",
-        "title": "Validate JSON"
+        "command": "ethical-json-tools.validate",
+        "title": "Validate"
       },
       {
-        "command": "ethical-valid-json.prettyFormatJson",
+        "command": "ethical-json-tools.prettify",
         "title": "Prettify"
       },
       {
-        "command": "ethical-valid-json.minifyJson",
+        "command": "ethical-json-tools.minify",
         "title": "Minify"
       },
       {
-        "command": "ethical-valid-json.stringifyJson",
+        "command": "ethical-json-tools.stringify",
         "title": "Stringify"
       },
       {
-        "command": "ethical-valid-json.parseStringifiedJson",
+        "command": "ethical-json-tools.unstringify",
         "title": "Unstringify"
       }
     ],
@@ -52,7 +52,7 @@
     "viewsWelcome": [
       {
         "view": "jsonTools",
-        "contents": "[Validate JSON](command:ethical-valid-json.validateJson)\n[Pretty Format JSON](command:ethical-valid-json.prettyFormatJson)\n[Minify JSON](command:ethical-valid-json.minifyJson)\n[Stringify JSON](command:ethical-valid-json.stringifyJson)\n[Parse Stringified JSON](command:ethical-valid-json.parseStringifiedJson)"
+        "contents": "JSON Actions:\n\n* [Validate](command:ethical-json-tools.validate)\n* [Prettify](command:ethical-json-tools.prettify)\n* [Minify](command:ethical-json-tools.minify)\n\nString Actions:\n\n* [Stringify](command:ethical-json-tools.stringify)\n* [Unstringify](command:ethical-json-tools.unstringify)"
       }
     ]
   },

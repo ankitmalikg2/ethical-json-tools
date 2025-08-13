@@ -2,7 +2,7 @@ import * as vscode from 'vscode';
 
 export function activate(context: vscode.ExtensionContext) {
 
-    let validateJsonCommand = vscode.commands.registerCommand('ethical-valid-json.validateJson', () => {
+    let validateCommand = vscode.commands.registerCommand('ethical-json-tools.validate', () => {
         const editor = vscode.window.activeTextEditor;
         if (!editor) {
             vscode.window.showInformationMessage('No active editor found.');
@@ -26,7 +26,7 @@ export function activate(context: vscode.ExtensionContext) {
         }
     });
 
-    let prettyFormatJsonCommand = vscode.commands.registerCommand('ethical-valid-json.prettyFormatJson', async () => {
+    let prettifyCommand = vscode.commands.registerCommand('ethical-json-tools.prettify', async () => {
         const editor = vscode.window.activeTextEditor;
         if (!editor) {
             vscode.window.showInformationMessage('No active editor found.');
@@ -59,7 +59,7 @@ export function activate(context: vscode.ExtensionContext) {
         }
     });
 
-    let minifyJsonCommand = vscode.commands.registerCommand('ethical-valid-json.minifyJson', async () => {
+    let minifyCommand = vscode.commands.registerCommand('ethical-json-tools.minify', async () => {
         const editor = vscode.window.activeTextEditor;
         if (!editor) {
             vscode.window.showInformationMessage('No active editor found.');
@@ -92,7 +92,7 @@ export function activate(context: vscode.ExtensionContext) {
         }
     });
 
-    let stringifyJsonCommand = vscode.commands.registerCommand('ethical-valid-json.stringifyJson', async () => {
+    let stringifyCommand = vscode.commands.registerCommand('ethical-json-tools.stringify', async () => {
         const editor = vscode.window.activeTextEditor;
         if (!editor) {
             vscode.window.showInformationMessage('No active editor found.');
@@ -123,7 +123,7 @@ export function activate(context: vscode.ExtensionContext) {
         }
     });
 
-    let parseStringifiedJsonCommand = vscode.commands.registerCommand('ethical-valid-json.parseStringifiedJson', async () => {
+    let unstringifyCommand = vscode.commands.registerCommand('ethical-json-tools.unstringify', async () => {
         const editor = vscode.window.activeTextEditor;
         if (!editor) {
             vscode.window.showInformationMessage('No active editor found.');
@@ -157,11 +157,11 @@ export function activate(context: vscode.ExtensionContext) {
         }
     });
 
-    context.subscriptions.push(validateJsonCommand);
-    context.subscriptions.push(prettyFormatJsonCommand);
-    context.subscriptions.push(minifyJsonCommand);
-    context.subscriptions.push(stringifyJsonCommand);
-    context.subscriptions.push(parseStringifiedJsonCommand);
+    context.subscriptions.push(validateCommand);
+    context.subscriptions.push(prettifyCommand);
+    context.subscriptions.push(minifyCommand);
+    context.subscriptions.push(stringifyCommand);
+    context.subscriptions.push(unstringifyCommand);
 }
 
 export function deactivate() {}
