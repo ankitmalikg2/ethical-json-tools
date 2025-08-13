@@ -99,13 +99,18 @@ export function activate(context: vscode.ExtensionContext) {
             return;
         }
 
+        const document = editor.document;
         const selection = editor.selection;
-        if (selection.isEmpty) {
-            vscode.window.showInformationMessage('Please select a JSON block to stringify.');
+
+        const range = selection.isEmpty
+            ? new vscode.Range(new vscode.Position(0, 0), document.lineAt(document.lineCount - 1).range.end)
+            : selection;
+
+        const text = document.getText(range);
+        if (!text) {
+            vscode.window.showInformationMessage('No text to stringify.');
             return;
         }
-
-        const text = editor.document.getText(selection);
 
         try {
             // Ensure the selected text is valid JSON before trying to stringify it.
@@ -115,7 +120,7 @@ export function activate(context: vscode.ExtensionContext) {
             const stringified = JSON.stringify(text);
             
             await editor.edit(editBuilder => {
-                editBuilder.replace(selection, stringified);
+                editBuilder.replace(range, stringified);
             });
         } catch (e) {
             const message = e instanceof Error ? e.message : String(e);
@@ -130,13 +135,18 @@ export function activate(context: vscode.ExtensionContext) {
             return;
         }
 
+        const document = editor.document;
         const selection = editor.selection;
-        if (selection.isEmpty) {
-            vscode.window.showInformationMessage('Please select a string containing JSON to parse.');
+
+        const range = selection.isEmpty
+            ? new vscode.Range(new vscode.Position(0, 0), document.lineAt(document.lineCount - 1).range.end)
+            : selection;
+
+        const text = document.getText(range);
+        if (!text) {
+            vscode.window.showInformationMessage('No text to unstringify.');
             return;
         }
-
-        const text = editor.document.getText(selection);
 
         try {
             // The selection is a string literal. We need to parse it to get the content.
@@ -149,7 +159,7 @@ export function activate(context: vscode.ExtensionContext) {
             const formattedJson = JSON.stringify(jsonObject, null, 2);
             
             await editor.edit(editBuilder => {
-                editBuilder.replace(selection, formattedJson);
+                editBuilder.replace(range, formattedJson);
             });
         } catch (e) {
             const message = e instanceof Error ? e.message : String(e);
