@@ -28,17 +28,27 @@ These commands are useful when you have JSON data embedded inside a string liter
 3.  Click on the action you want to perform.
 4.  The commands will operate on your current selection. If no text is selected, they will operate on the entire active file.
 
+## Why This Extension is Ethical
+
+In light of growing concerns about VS Code extensions potentially misusing user data, this tool was built with transparency and security as top priorities.
+
+*   **Built for Personal Use:** I created this extension primarily for my own productivity. It only contains the functionality I need, with no hidden tracking or data collection.
+*   **Open Source and Verifiable:** The complete source code is available on GitHub for you to review and verify. You can be confident that the extension does exactly what it claims to do, and nothing more.
+*   **No Malicious Code:** This extension does not contain any code that could harm your computer or steal your data.
+
+You can view the source code here: [https://github.com/ankitmalikg2/ethical-json-tools](https://github.com/ankitmalikg2/ethical-json-tools)
+
 ## Command Reference
 
 This extension provides the following commands, which can be accessed through the Command Palette (Ctrl+Shift+P or Cmd+Shift+P):
 
 | Command | Description |
 | --- | --- |
-| `ethical-json-tools.validate` | Validate |
-| `ethical-json-tools.prettify` | Prettify |
-| `ethical-json-tools.minify` | Minify |
-| `ethical-json-tools.stringify` | Stringify |
-| `ethical-json-tools.unstringify` | Unstringify |
+| Validate | Checks if the selected text or the entire file is valid JSON. |
+| Prettify | Formats the selected JSON or the entire file with standard indentation. |
+| Minify | Compresses the selected JSON or the entire file into a single line. |
+| Stringify | Takes a block of JSON text and converts it into an escaped, single-line string literal. |
+| Unstringify | Takes a string literal containing JSON and replaces it with the formatted, "un-escaped" JSON content. |
 
 ## Contributing
 

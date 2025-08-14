@@ -23,23 +23,23 @@
     "commands": [
       {
         "command": "ethical-json-tools.validate",
-        "title": "Validate"
+        "title": "JSON: validate"
       },
       {
         "command": "ethical-json-tools.prettify",
-        "title": "Prettify"
+        "title": "JSON: prettify"
       },
       {
         "command": "ethical-json-tools.minify",
-        "title": "Minify"
+        "title": "JSON: minify"
       },
       {
         "command": "ethical-json-tools.stringify",
-        "title": "Stringify"
+        "title": "JSON: stringify"
       },
       {
         "command": "ethical-json-tools.unstringify",
-        "title": "Unstringify"
+        "title": "JSON: unstringify"
       }
     ],
     "views": {
