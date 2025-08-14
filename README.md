@@ -1,71 +1,46 @@
-# ethical-valid-json README
+# Ethical JSON Tools
 
-This is the README for your extension "ethical-valid-json". After writing up a brief description, we recommend including the following sections.
+A Visual Studio Code extension that provides a set of tools to work with JSON data ethically and efficiently.
 
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+This extension provides a set of commands to help you work with JSON data. You can access these commands from the "JSON Tools" view in the Explorer sidebar.
 
-For example if there is an image subfolder under your extension project workspace:
+### JSON Actions
 
-\!\[feature X\]\(images/feature-x.png\)
+*   **Validate**: Checks if the selected text or the entire file is valid JSON.
+*   **Prettify**: Formats the selected JSON or the entire file with standard indentation.
+*   **Minify**: Compresses the selected JSON or the entire file into a single line.
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+### String Actions
 
-## Requirements
+These commands are useful when you have JSON data embedded inside a string literal in your code.
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+*   **Stringify**: Takes a block of JSON text and converts it into an escaped, single-line string literal.
+*   **Unstringify**: Takes a string literal containing JSON and replaces it with the formatted, "un-escaped" JSON content.
 
-## Extension Settings
+## Usage
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+1.  Open the Explorer sidebar in VS Code.
+2.  Find the "JSON Tools" view.
+3.  Click on the action you want to perform.
+4.  The commands will operate on your current selection. If no text is selected, they will operate on the entire active file.
 
-For example:
+## Contributing
 
-This extension contributes the following settings:
-
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
-
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
+Contributions are welcome! Please feel free to open an issue or submit a pull request.
 
 ## Release Notes
 
-Users appreciate release notes as you update your extension.
+### 0.0.1
 
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
+Initial release of Ethical JSON Tools with the following features:
+- Validate JSON
+- Prettify JSON
+- Minify JSON
+- Stringify JSON
+- Unstringify JSON
 
 ---
 
-## Following extension guidelines
-
-Ensure that you've read through the extensions guidelines and follow the best practices for creating your extension.
-
-* [Extension Guidelines](https://code.visualstudio.com/api/references/extension-guidelines)
-
-## Working with Markdown
-
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+**Enjoy using Ethical JSON Tools!**

@@ -2,6 +2,7 @@
   "name": "ethical-json-tools",
   "displayName": "Ethical Json Tools",
   "description": "this tool has various ethical tools related to Json",
+  "publisher": "AnkitMalikTools",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.91.0"
