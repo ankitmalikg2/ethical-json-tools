@@ -53,7 +53,7 @@
     "viewsWelcome": [
       {
         "view": "jsonTools",
-        "contents": "JSON Actions:\n\n* [Validate](command:ethical-json-tools.validate)\n* [Prettify](command:ethical-json-tools.prettify)\n* [Minify](command:ethical-json-tools.minify)\n\nString Actions:\n\n* [Stringify](command:ethical-json-tools.stringify)\n* [Unstringify](command:ethical-json-tools.unstringify)"
+        "contents": "[Validate](command:ethical-json-tools.validate) \n [Prettify](command:ethical-json-tools.prettify) \n [Minify](command:ethical-json-tools.minify) \n[Stringify](command:ethical-json-tools.stringify) \n[Unstringify](command:ethical-json-tools.unstringify)"
       }
     ]
   },

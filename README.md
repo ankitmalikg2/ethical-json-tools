@@ -1,5 +1,7 @@
 # Ethical JSON Tools
 
+![Ethical JSON Tools](./images/json_tools_image.png)
+
 A Visual Studio Code extension that provides a set of tools to work with JSON data ethically and efficiently.
 
 ## Features
@@ -25,6 +27,18 @@ These commands are useful when you have JSON data embedded inside a string liter
 2.  Find the "JSON Tools" view.
 3.  Click on the action you want to perform.
 4.  The commands will operate on your current selection. If no text is selected, they will operate on the entire active file.
+
+## Command Reference
+
+This extension provides the following commands, which can be accessed through the Command Palette (Ctrl+Shift+P or Cmd+Shift+P):
+
+| Command | Description |
+| --- | --- |
+| `ethical-json-tools.validate` | Validate |
+| `ethical-json-tools.prettify` | Prettify |
+| `ethical-json-tools.minify` | Minify |
+| `ethical-json-tools.stringify` | Stringify |
+| `ethical-json-tools.unstringify` | Unstringify |
 
 ## Contributing
 
