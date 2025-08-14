@@ -1,6 +1,6 @@
 # Ethical JSON Tools
 
-![Ethical JSON Tools](./images/json_tools_image.png)
+![Ethical JSON Tools](https://i.ibb.co/FLTkQj4f/json-tools-image.png)
 
 A Visual Studio Code extension that provides a set of tools to work with JSON data ethically and efficiently.
 
