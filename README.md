@@ -1,6 +1,6 @@
 # Ethical JSON Tools - Secure and Simple
 
-![Ethical JSON Tools](images/json_tools_image.png)
+![Ethical JSON Tools](https://raw.githubusercontent.com/ankitmalikg2/ethical-json-tools/main/images/json_tools_image.png)
 
 A Visual Studio Code extension that provides a set of tools to work with JSON data ethically and efficiently. This extension is designed with transparency and security as top priorities, ensuring that your data remains private and your workflow is streamlined.
 
@@ -27,7 +27,7 @@ In light of growing concerns about VS Code extensions potentially misusing user 
 
 *   **Built for Personal Use**: This extension was created for my own productivity and only includes the functionality I need, with no hidden tracking or data collection.
 *   **Open Source and Verifiable**: The complete source code is available on GitHub for you to review and verify. You can be confident that the extension does exactly what it claims to do, and nothing more.
-*   **No Malicious Code**: This extension does not contain any code that could harm your computer or steal your data.
+*   **No Malicious Code**: This extension does not contain any code that could harm your computer or steal your data. It even doesn't have any tracking code.
 
 You can view the source code here: [https://github.com/ankitmalikg2/ethical-json-tools](https://github.com/ankitmalikg2/ethical-json-tools)
 
