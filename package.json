@@ -1,15 +1,42 @@
 {
   "name": "ethical-json-tools",
-  "displayName": "Ethical Json Tools",
-  "description": "this tool has various ethical tools related to Json",
+  "displayName": "Ethical JSON Tools - Secure and Simple",
+  "description": "A secure, simple, and transparent set of tools for all your JSON needs. Validate, format, minify, stringify, and unstringify JSON with confidence, knowing your data stays private. No tracking, no telemetry, just pure functionality.",
   "publisher": "AnkitMalikTools",
   "icon": "icon.png",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "engines": {
     "vscode": "^1.91.0"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ankitmalikg2/ethical-json-tools.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ankitmalikg2/ethical-json-tools/issues"
+  },
   "categories": [
-    "Other"
+    "Formatters",
+    "Programming Languages",
+    "JSON"
+  ],
+  "keywords": [
+    "json",
+    "formatter",
+    "validator",
+    "linter",
+    "minify",
+    "uglify",
+    "compress",
+    "prettify",
+    "beautify",
+    "stringify",
+    "unescape",
+    "escape",
+    "tools",
+    "secure",
+    "ethical",
+    "privacy"
   ],
   "activationEvents": [
     "onCommand:ethical-json-tools.validate",
